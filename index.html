@@ -20,76 +20,103 @@
     <div id="wrapper">
       <div class="main">
         <h5 class="lead main-header">Welcome!</h5>
-        <p class="lead main-text">Sign up for NSMS</p>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <label class="input-group-text" for="inputGroupSelect01"
-              >School/Guardian</label>
+        <p class="lead main-text">Sign up for <b>NSMS</b></p>
+        <form action="">
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >School/Guardian</label
+                >
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>School</option>
+                <option value="1">Guardian</option>
+              </select>
+            </div>
+    
           </div>
-          <select class="custom-select" id="inputGroupSelect01">
-            <option selected>School</option>
-            <option value="1">Guardian</option>
-          </select>
-        </div>
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Name of School</span>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Name of school</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                required
+              />
+            </div>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </div>
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Username</span>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Email</span>
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                required
+              />
+            </div>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </div>
-
-        <div class="input-group mb-2">
-          <div class="input-group-prepend">
-            <span class="input-group-text mb-2">Password</span>
+          
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Username</span>
+              </div>
+              <input
+                type="username"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                required
+              />
+            </div>
           </div>
-          <input type="text" class="form-control" />
-        </div>
-
-        <div class="input-group mb-4">
-          <div class="input-group-prepend">
-            <span class="input-group-text">Confirm password</span>
+          
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text mb-2">Password</span>
+              </div>
+              <input type="password" class="form-control" required/>
+            </div>
           </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
-          />
-        </div>
 
-        <a href="#" class="call-to-action-btn"><strong>Sign up</strong></a>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text mb-2">Confirm password</span>
+              </div>
+              <input type="password" class="form-control" required/>
+            </div>
+          </div>
 
-        <div class="password-options">
-          <p class="mt-4 mb-0">
-            Already have an account? you can sign-in
-            <span><a class="text" href="https://owoloisaac.github.io/NSMS-Signin.github.io/">here</a></span>
-          </p>
-        </div>
+          <button type="submit" class="btn btn-primary call-to-action-btn">Sign up</button>
+          <div class="password-options">
+            <p class="mt-4 mb-0">
+              Already have an account? you can sign-in
+              <span><a class="text" href="https://owoloisaac.github.io/NSMS-Signin.github.io/">here</a></span>
+            </p>
+          </div>
+          
+        </form>
+        
       </div>
     </div>
 
     <footer>
-      <p class="m-0">&copy;2020</p>
-      <p class="lead m-0">For the <strong>Chimdindu Clan</strong></p>
-      <p class="m-0">Designed by isaac jesse</p>
+      <div class="page-info">
+        <p class="m-0 footer-text">&copy;2020</p>
+        <p class=" ml-2 footer-text"> This is a project built by the <strong>Chimdindu Clan.</strong> All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
